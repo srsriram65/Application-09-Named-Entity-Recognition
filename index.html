@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Named Entity Recognition</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="app">
+
+    <header>
+        <div class="icon">🧠</div>
+        <h1>Named Entity Recognition</h1>
+        <p>Find important entities from your text</p>
+    </header>
+
+    <div class="card">
+
+        <label>📝 Enter Text</label>
+
+        <textarea id="textInput"
+            placeholder="Example: Srinath studies at Prathyusha Engineering College in Chennai. Contact him at student@gmail.com"></textarea>
+
+        <button class="analyze" onclick="analyzeText()">
+            🔍 Analyze Text
+        </button>
+
+        <button class="clear" onclick="clearText()">
+            🗑️ Clear
+        </button>
+
+        <div id="status">🟢 Ready to analyze</div>
+
+        <div class="results">
+
+            <div class="result-box">
+                <h3>👤 People</h3>
+                <div id="people">None</div>
+            </div>
+
+            <div class="result-box">
+                <h3>📍 Places</h3>
+                <div id="places">None</div>
+            </div>
+
+            <div class="result-box">
+                <h3>🏢 Organizations</h3>
+                <div id="organizations">None</div>
+            </div>
+
+            <div class="result-box">
+                <h3>📧 Emails</h3>
+                <div id="emails">None</div>
+            </div>
+
+            <div class="result-box">
+                <h3>📅 Dates</h3>
+                <div id="dates">None</div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <section class="info">
+
+        <h2>What is NER?</h2>
+
+        <p>
+            Named Entity Recognition is an NLP technique used
+            to identify important entities such as people,
+            places, organizations, dates and email addresses
+            from text.
+        </p>
+
+        <div class="steps">
+            <span>📝 Text</span>
+            <span>→</span>
+            <span>🔍 Analyze</span>
+            <span>→</span>
+            <span>🏷️ Entities</span>
+        </div>
+
+    </section>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
